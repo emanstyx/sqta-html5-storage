@@ -1,0 +1,53 @@
+	<!DOCTYPE.html>
+	<html lang ="en">
+	<head>
+
+	<meta charset="UTF-8">
+	<title> Document </html>
+
+	</head>
+	<body>
+
+Name:
+	<input type="text" id="txtName">
+	<button onclick=""> Add to Local Storage>
+
+	<script>
+	sample1();
+	function sample1() {
+	let msg = "Hello wolrd";
+	console.log(msg);
+
+localstorage.SetItem('msg','Hello World');
+sessionStorage.setItem('msg','Hello World');
+
+let str1 = localstorage.getItem('msg');
+let str2 = sessionstorage.getItem('msg');
+let str3 = str1 + str2;
+
+console.log(str1);
+
+//localstorage.removeItem('msg');
+
+localstorage.clear();
+sessionstorage.clear();
+
+	}
+	function addName(){
+		let name = document.querySelector('#txtName').value;
+		console.log(name);
+		localStorage.setName('name',name);
+		sessionStorage.setName('name',name);
+
+	}
+	let names = ['qwerty','ytrewq'];
+	function addName(){
+		let name = document.querySelector('#txtName'),value;
+		names.push(name);
+		localStorage.SetItem('names', names);
+		
+
+	</script>
+
+</body>
+</html>
